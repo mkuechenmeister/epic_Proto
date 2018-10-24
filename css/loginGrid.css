@@ -1,0 +1,135 @@
+
+
+body{
+    background-image: url("../img/pexels-photo-1110670.jpeg");
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 80vw 1fr;
+    grid-template-rows: 60px minmax(200px, auto) 60px;
+    grid-template-areas:
+            "nav nav nav"
+            "aside main aside2"
+            "footer footer footer";
+
+}
+
+
+
+.top{
+    grid-area: nav;
+    height: 100vh;
+
+}
+
+
+h1{
+
+    text-align: center;
+
+
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    opacity: .7;
+}
+
+li {
+    float: left;
+}
+
+.right {
+    float: right;
+    display: flex;
+    color: black;
+    text-align: center;
+    margin: 14px 16px;
+    text-decoration: none;
+}
+
+li a {
+    display: flex;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.anchor{
+    display: flex;
+    color: black;
+    text-align: center;
+    margin: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #D4D1E2;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.container-grid{
+    grid-area: main;
+}
+
+form {
+
+    max-width: 500px;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    grid-template-columns: minmax(150px, 500px);
+    grid-template-rows: 40px 40px 40px;
+    grid-template-areas:
+
+            "username"
+            "password"
+            "submit";
+
+    grid-gap: 5px;
+    alignment: center;
+    background-color: #eeeeee;
+    opacity: 0.8;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #aaaaaa;
+    padding: 50px;
+}
+
+
+
+
+#uname{
+    grid-area: username;
+}
+
+
+#pw{
+    grid-area: password;
+}
+
+
+
+
+
+/*input{
+    grid-column:  2/3;
+}
+
+label{
+    grid-column: 2/3;
+}*/
+
